@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: rgb(7, 7, 7);
+            width: 1395px;
+            height: 450px;
+        }
+        img{
+            width: 1695px;
+            height:720px;
+        }
+        /* Estilo para o sidebar */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #333;
+            padding-top: 20px;
+            transition: left 0.3s;
+        }
+
+        /* Estilo para os links do sidebar */
+        .sidebar a {
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            display: block;
+            transition: 0.2s;
+        }
+
+        /* Mudar a cor dos links do sidebar quando o mouse passar por cima */
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Estilo para o conteúdo principal */
+        .content {
+            margin-left: 0;
+            padding: 20px;
+        }
+
+        /* Botão para abrir o sidebar */
+        #openSidebar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #f7f3f3;
+        }
+
+        /* Estilo para fechar o sidebar */
+        .close-sidebar {
+            left: 0;
+        }
+    </style>
+</head>
+<img src="https://i0.statig.com.br/bancodeimagens/3h/0n/58/3h0n588pyips5nhswfzofzntn.jpg" alt="imagem.home">
+<body>
+    <!-- <img src="https://i0.statig.com.br/bancodeimagens/3h/0n/58/3h0n588pyips5nhswfzofzntn.jpg" alt="imagem.home"> -->
+    <!-- Botão para abrir o sidebar -->
+    <!-- <div id="openSidebar">&#9776;</div> -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div id="openSidebar">&#9776;</div><br><br><br>
+        <a href="https://gutoandrade01.github.io/conversor/conversorLow&upercase.html ">Conversor Low&Upercase</a>
+        <a href="https://gutoandrade01.github.io/Sistema-de-Sorteio/sorteio/sorteio.html ">Sorteio</a>
+        <a href="https://gutoandrade01.github.io/Gerador_Aleatorio/Generator.html">Gerador de Dezenas Aleatório</a>
+        <a href="#">Item 4</a>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        
+    </div>
+
+    <!-- Script para abrir/fechar o sidebar -->
+    <script>
+        document.getElementById("openSidebar").addEventListener("click", function() {
+            var sidebar = document.querySelector(".sidebar");
+            sidebar.classList.toggle("close-sidebar");
+        });
+    </script>
+</body>
+</html>
